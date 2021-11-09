@@ -32,6 +32,8 @@ namespace Unit_Conversions
             this.infoLabel = new System.Windows.Forms.Label();
             this.choiceBox = new System.Windows.Forms.TextBox();
             this.inputBox = new System.Windows.Forms.TextBox();
+            this.convertButton = new System.Windows.Forms.Button();
+            this.outputLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // infoLabel
@@ -57,16 +59,38 @@ namespace Unit_Conversions
             this.inputBox.Size = new System.Drawing.Size(100, 20);
             this.inputBox.TabIndex = 2;
             // 
+            // convertButton
+            // 
+            this.convertButton.Location = new System.Drawing.Point(98, 210);
+            this.convertButton.Name = "convertButton";
+            this.convertButton.Size = new System.Drawing.Size(138, 47);
+            this.convertButton.TabIndex = 3;
+            this.convertButton.Text = "convert";
+            this.convertButton.UseVisualStyleBackColor = true;
+            this.convertButton.Click += new System.EventHandler(this.convertButton_Click);
+            // 
+            // outputLabel
+            // 
+            this.outputLabel.AutoSize = true;
+            this.outputLabel.Location = new System.Drawing.Point(31, 272);
+            this.outputLabel.Name = "outputLabel";
+            this.outputLabel.Size = new System.Drawing.Size(63, 13);
+            this.outputLabel.TabIndex = 4;
+            this.outputLabel.Text = "outputLabel";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(352, 321);
+            this.Controls.Add(this.outputLabel);
+            this.Controls.Add(this.convertButton);
             this.Controls.Add(this.inputBox);
             this.Controls.Add(this.choiceBox);
             this.Controls.Add(this.infoLabel);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,6 +101,8 @@ namespace Unit_Conversions
         private System.Windows.Forms.Label infoLabel;
         private System.Windows.Forms.TextBox choiceBox;
         private System.Windows.Forms.TextBox inputBox;
+        private System.Windows.Forms.Button convertButton;
+        private System.Windows.Forms.Label outputLabel;
     }
 }
 
