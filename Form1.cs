@@ -12,7 +12,6 @@ namespace Unit_Conversions
 {
     public partial class Form1 : Form
     {
-        int choice = 1;
 
         public Form1()
         {
@@ -28,9 +27,14 @@ namespace Unit_Conversions
         {
             int choice = Convert.ToInt32(choiceBox.Text);
             double value = Convert.ToDouble(inputBox.Text);
+
             if(choice == 1)
             {
                 InToCm(value);
+            }
+            else if(choice == 2)
+            {
+                FtToCm(value);
             }
 
         }
@@ -43,17 +47,18 @@ namespace Unit_Conversions
 
         public void FtToCm(double feet)
         {
-
+            double cm = feet * 30.48;
+            outputLabel.Text = $"{inch} inches is {cm} cm";
         }
 
-        public void YdToM(double yard)
-        {
+        //public void YdToM(double yard)
+        //{
 
-        }
+        //}
 
-        public void YdToKm(double yard2)
-        {
+        //public void YdToKm(double yard2)
+        //{
 
-        }
+        //}
     }
 }
