@@ -70,5 +70,10 @@ namespace Unit_Conversions
             double km = miles * 1.6;
             outputLabel.Text = $"{miles} miles is {km} km";
         }
+
+        private void infoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

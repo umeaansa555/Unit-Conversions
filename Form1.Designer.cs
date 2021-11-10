@@ -40,12 +40,13 @@ namespace Unit_Conversions
             // 
             // infoLabel
             // 
-            this.infoLabel.Location = new System.Drawing.Point(37, 23);
+            this.infoLabel.Location = new System.Drawing.Point(34, 23);
             this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Size = new System.Drawing.Size(238, 107);
+            this.infoLabel.Size = new System.Drawing.Size(241, 107);
             this.infoLabel.TabIndex = 0;
             this.infoLabel.Text = "Imperial to Metric Conversion\r\n\r\n\r\n1. Inches to cm\r\n2. Feet to cm\r\n3. Yards to m\r" +
     "\n4. Miles to km";
+            this.infoLabel.Click += new System.EventHandler(this.infoLabel_Click);
             // 
             // choiceBox
             // 
@@ -75,7 +76,7 @@ namespace Unit_Conversions
             // 
             this.outputLabel.Location = new System.Drawing.Point(34, 228);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(241, 26);
+            this.outputLabel.Size = new System.Drawing.Size(248, 26);
             this.outputLabel.TabIndex = 4;
             this.outputLabel.Text = "outputLabel";
             // 
