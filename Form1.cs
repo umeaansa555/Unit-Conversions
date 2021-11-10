@@ -27,27 +27,27 @@ namespace Unit_Conversions
         {
             int choice = Convert.ToInt32(choiceBox.Text);
             double value = Convert.ToDouble(inputBox.Text);
-            int answer;
+           
 
             if(choice == 1)
             {
-                result = InToCm(value)
-                outputLabel.Text = $"{inch} inches is {cm} cm";
+                double result = InToCm(value);
+                outputLabel.Text = $"{value} inches is {result} cm";
             }
             else if(choice == 2)
             {
-                FtToCm(value);
-                outputLabel.Text = $"{feet} feet is {cm} cm";
+                double result = FtToCm(value);
+                outputLabel.Text = $"{value} feet is {result} cm";
             }
             else if(choice == 3)
             {
-               YdToM(value);
-               outputLabel.Text = $"{yard} yards is {m} m";
+               double result = YdToM(value);
+               outputLabel.Text = $"{value} yards is {result} m";
             }
             else if (choice == 4)
             {
-                MiToKm(value);
-                outputLabel.Text = $"{miles} miles is {km} km";
+                double result = MiToKm(value);
+                outputLabel.Text = $"{value} miles is {result} km";
             }
 
         }

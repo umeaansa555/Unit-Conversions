@@ -78,7 +78,6 @@ namespace Unit_Conversions
             this.outputLabel.Name = "outputLabel";
             this.outputLabel.Size = new System.Drawing.Size(248, 26);
             this.outputLabel.TabIndex = 4;
-            this.outputLabel.Text = "outputLabel";
             // 
             // choiceLabel
             // 
