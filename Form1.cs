@@ -36,6 +36,14 @@ namespace Unit_Conversions
             {
                 FtToCm(value);
             }
+            else if(choice == 3)
+            {
+               YdToM(value);
+            }
+            else if (choice == 4)
+            {
+                MiToKm(value);
+            }
 
         }
 
@@ -48,17 +56,19 @@ namespace Unit_Conversions
         public void FtToCm(double feet)
         {
             double cm = feet * 30.48;
-            outputLabel.Text = $"{inch} inches is {cm} cm";
+            outputLabel.Text = $"{feet} feet is {cm} cm";
         }
 
-        //public void YdToM(double yard)
-        //{
+        public void YdToM(double yard)
+        {
+            double m = yard * 0.91;
+            outputLabel.Text = $"{yard} yards is {m} m";
+        }
 
-        //}
-
-        //public void YdToKm(double yard2)
-        //{
-
-        //}
+        public void MiToKm(double miles)
+        {
+            double km = miles * 1.6;
+            outputLabel.Text = $"{miles} miles is {km} km";
+        }
     }
 }
