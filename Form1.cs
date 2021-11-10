@@ -27,10 +27,12 @@ namespace Unit_Conversions
         {
             int choice = Convert.ToInt32(choiceBox.Text);
             double value = Convert.ToDouble(inputBox.Text);
+            int answer;
 
             if(choice == 1)
             {
-                InToCm(value);
+                result = InToCm(value)
+                outputLabel.Text = $"{inch} inches is {cm} cm";
             }
             else if(choice == 2)
             {
@@ -47,28 +49,31 @@ namespace Unit_Conversions
 
         }
 
-        public void InToCm(double inch)
+        public double InToCm(double inch)
         {
             double cm = inch * 2.54;
-            outputLabel.Text = $"{inch} inches is {cm} cm";
+            return cm;
         }
 
-        public void FtToCm(double feet)
+        public double FtToCm(double feet)
         {
             double cm = feet * 30.48;
-            outputLabel.Text = $"{feet} feet is {cm} cm";
+            return cm;
+            //outputLabel.Text = $"{feet} feet is {cm} cm";
         }
 
-        public void YdToM(double yard)
+        public double YdToM(double yard)
         {
             double m = yard * 0.91;
-            outputLabel.Text = $"{yard} yards is {m} m";
+            return m;
+            //outputLabel.Text = $"{yard} yards is {m} m";
         }
 
-        public void MiToKm(double miles)
+        public double MiToKm(double miles)
         {
             double km = miles * 1.6;
-            outputLabel.Text = $"{miles} miles is {km} km";
+            return km;
+            //outputLabel.Text = $"{miles} miles is {km} km";
         }
 
         private void infoLabel_Click(object sender, EventArgs e)
