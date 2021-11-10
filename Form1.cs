@@ -37,14 +37,17 @@ namespace Unit_Conversions
             else if(choice == 2)
             {
                 FtToCm(value);
+                outputLabel.Text = $"{feet} feet is {cm} cm";
             }
             else if(choice == 3)
             {
                YdToM(value);
+               outputLabel.Text = $"{yard} yards is {m} m";
             }
             else if (choice == 4)
             {
                 MiToKm(value);
+                outputLabel.Text = $"{miles} miles is {km} km";
             }
 
         }
@@ -59,21 +62,18 @@ namespace Unit_Conversions
         {
             double cm = feet * 30.48;
             return cm;
-            //outputLabel.Text = $"{feet} feet is {cm} cm";
         }
 
         public double YdToM(double yard)
         {
             double m = yard * 0.91;
             return m;
-            //outputLabel.Text = $"{yard} yards is {m} m";
         }
 
         public double MiToKm(double miles)
         {
             double km = miles * 1.6;
             return km;
-            //outputLabel.Text = $"{miles} miles is {km} km";
         }
 
         private void infoLabel_Click(object sender, EventArgs e)
